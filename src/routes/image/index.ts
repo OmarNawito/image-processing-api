@@ -34,7 +34,7 @@ imageRoutes.get('/resize', async (req: Request, res: Response, next: NextFunctio
             });
         }
     } catch (error) {
-        console.log(e);
+        console.log(error);
     }
 });
 
