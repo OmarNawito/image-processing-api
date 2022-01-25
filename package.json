@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "ts-node src/.",
-    "start": "nodemon dist/.",
+    "start": "nodemon src/index.ts",
     "build": "tsc",
     "prettier-format": "prettier --config .prettierrc {,!(node_modules)/**/}*.ts --write",
     "lint": "eslint . --ext .ts",
