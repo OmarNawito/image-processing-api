@@ -7,7 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "ts-node src/.",
     "start": "nodemon dist/.",
-    "prettier-format": "prettier --config .prettierrc {,!(node_modules)/**/}*.ts --write"
+    "prettier-format": "prettier --config .prettierrc {,!(node_modules)/**/}*.ts --write",
+    "lint": "eslint . --ext .ts"
   },
   "author": "omar nawito",
   "license": "ISC",
@@ -16,6 +17,10 @@
   },
   "devDependencies": {
     "@types/express": "^4.17.13",
+    "@typescript-eslint/eslint-plugin": "^5.10.1",
+    "eslint": "^8.7.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^4.0.0",
     "nodemon": "^2.0.15",
     "prettier": "^2.5.1",
     "ts-node": "^10.4.0",
