@@ -16,6 +16,7 @@ imageRoutes.get('/resize', async (req: Request, res: Response, next: NextFunctio
         const imagePath = `${f}${w}x${h}.jpg`;
         console.log('imagePath', imagePath);
         const resizePath = `./public/${f}${w}x${h}.jpg`;
+        console.log('resizePath', resizePath);
         const imagePathExists = await fileExisits(path.join("public", imagePath));
         console.log('imagePathExists', imagePathExists);
         if (imagePathExists) {

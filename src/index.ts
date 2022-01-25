@@ -21,3 +21,4 @@ app.get('/', async (_req: Request, res: Response): Promise<void> => {
 app.listen(port, () => {
   console.log(`server started on port: ${port}`);
 });
+export default app;
