@@ -2,7 +2,7 @@ import bodyParser from 'body-parser'
 import express, { NextFunction, Request, Response } from 'express';
 import path from "path";
 import fs from "fs";
-import { fileExisits } from '../../utilities';
+import { fileExisits, sharpResize } from '../../utilities';
 
 const imageRoutes = express.Router();
 imageRoutes.use(bodyParser.json())
@@ -25,7 +25,7 @@ imageRoutes.get('/resize', async(req: Request, res: Response, next: NextFunction
         if(imagePathExists) {
             res.sendFile(`/${imagePath}`, { root: path.join("./public") });
         }else {
-            
+
         }
     } catch (error) {
         
