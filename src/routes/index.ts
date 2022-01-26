@@ -9,6 +9,6 @@ const routes = express.Router();
 routes.use('/img', imageRoutes);
 
 routes.get('/', (_req: Request, res: Response): void => {
-  res.send('API route');
+  res.status(200).send('Image processing started');
 });
 export default routes;

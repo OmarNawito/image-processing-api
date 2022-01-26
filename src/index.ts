@@ -14,7 +14,7 @@ app.use(express.urlencoded({ extended: false }));
 
 app.use('/api', routes);
 
-app.get('/', async (_req: Request, res: Response): Promise<void> => {
+app.get('/', (_req: Request, res: Response): void => {
   res.status(200).send('Image processing started');
 });
 
