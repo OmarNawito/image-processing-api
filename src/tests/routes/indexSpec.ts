@@ -1,8 +1,7 @@
 import supertest from 'supertest';
-import app from '../../index';
+import app from '../../app';
 
 const request = supertest(app);
-console.log('request', request);
 
 describe('Server API', () => {
   it('should return a message', async (done) => {

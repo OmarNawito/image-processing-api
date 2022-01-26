@@ -6,11 +6,11 @@
   "scripts": {
     "dev": "ts-node src/.",
     "start": "nodemon src/index.ts",
-    "build": "tsc",
+    "build": "npx tsc",
     "prettier-format": "prettier --config .prettierrc {,!(node_modules)/**/}*.ts --write",
     "lint": "eslint . --ext .ts",
-    "test": "npm run build && npm run jest",
-    "jest": "jest"
+    "test": "npm run build && npm run jasmine",
+    "jasmine": "jasmine"
   },
   "author": "omar nawito",
   "license": "ISC",
@@ -30,11 +30,11 @@
     "eslint": "^8.7.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-prettier": "^4.0.0",
-    "jasmine": "^4.0.2",
+    "jasmine": "^3.9.0",
     "jasmine-spec-reporter": "^7.0.0",
     "nodemon": "^2.0.15",
     "prettier": "^2.5.1",
-    "supertest": "^6.2.2",
+    "supertest": "^6.1.6",
     "ts-node": "^10.4.0",
     "typescript": "^4.5.5"
   }
