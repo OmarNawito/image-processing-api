@@ -1,4 +1,4 @@
-import sharp, { Sharp } from "sharp";
+import sharp, { Sharp } from 'sharp';
 
 export const sharpResize = async (
   f: string | null,

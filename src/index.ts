@@ -1,15 +1,15 @@
 import express, { Request, Response, Application } from 'express';
 import routes from './routes';
-import cors from "cors";
+import cors from 'cors';
 
 const app: Application = express();
 const port = 3000;
 
-app.use(express.static("public"));
+app.use(express.static('public'));
 
 app.use(cors());
 
-app.use(express.json({ type: "application/json" }));
+app.use(express.json({ type: 'application/json' }));
 app.use(express.urlencoded({ extended: false }));
 
 app.use('/api', routes);
